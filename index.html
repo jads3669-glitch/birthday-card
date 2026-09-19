@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>إلك ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#ffd9e7;color:#5a3042;min-height:100vh;overflow-x:hidden}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{width:min(92vw,430px);background:#fff7fb;border-radius:28px;padding:30px 24px;text-align:center;box-shadow:0 18px 50px #9b526633;position:relative;overflow:hidden}
+h1{font-size:30px;margin:8px 0 18px}.sub{font-size:18px;line-height:1.9}
+button{border:0;border-radius:999px;padding:15px 26px;background:#e98aae;color:white;font-size:17px;font-weight:bold;box-shadow:0 8px 20px #c95b8244;cursor:pointer;margin-top:20px}
+.hidden{display:none}.heart{font-size:42px;animation:pulse 1.5s infinite}.flowers{font-size:34px;letter-spacing:7px;margin:15px 0}
+.msg{font-size:20px;line-height:2;margin:22px 0}.small{font-size:16px;line-height:1.9}.surprise{background:#fff0f6;border-radius:20px;padding:18px;margin-top:20px}
+.float{position:absolute;opacity:.55;animation:float 5s linear infinite}.f1{top:10%;left:8%}.f2{top:30%;right:5%}.f3{bottom:12%;left:12%}
+@keyframes pulse{50%{transform:scale(1.15)}}@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+</style>
+</head>
+<body>
+<div class="screen">
+  <div class="card">
+    <div class="float f1">🌸</div><div class="float f2">💗</div><div class="float f3">🌷</div>
+    <div id="start">
+      <div class="heart">💗</div>
+      <h1>إلكِ ❤️</h1>
+      <div class="sub">في شي صغير حابب قلك ياه...</div>
+      <button onclick="openCard()">افتحي هديتك 🎁</button>
+    </div>
+    <div id="content" class="hidden">
+      <div class="flowers">🌷 🌸 🌹</div>
+      <h1>كل سنة وإنتِ بخير ❤️</h1>
+      <div class="msg">يا قرة عيني، بتمنى تكون هالسنة أحلى سنة بحياتك، وتكون مليانة فرح وضحكة وأيام حلوة بتشبه قلبك.</div>
+      <div class="msg">بديكي تعرفي شغلة... أنا مرتاح معك، وبدي ياكي كل يوم بحياتي. وجودك صار جزء حلو من أيامي. ❤️</div>
+      <div class="small">وما بدي نضل نتخانق على أشياء صغيرة، لأنك غالية علي أكتر من أي زعل.</div>
+      <div class="flowers">🧸 💙 🚲 🌹</div>
+      <div class="msg">وإذا أوقات ما بحكي كتير، لا تزعلي مني... أنا فعلاً مضغوط بالشغل، بس إنتِ دايمًا ببالي حتى بالأيام اللي ما بقدر أحكي فيها كتير.</div>
+      <div class="surprise">
+        <div class="heart">🎁</div>
+        <div class="msg">وفي مفاجأة إلكِ... بس بدك تصبري شوي. ❤️</div>
+        <div class="small">رح توصلك بعد عيد ميلادك، وإن شاء الله تكون من الأشياء اللي تفرّح قلبك كتير.</div>
+      </div>
+      <div class="flowers">🌸 💗 🌷</div>
+      <div class="msg">بحبك كثير. وأكتر شي بتمنّاه إننا نضل بحياة بعض ونصنع سوا ذكريات أحلى وأحلى. ❤️</div>
+      <div class="small">عيد ميلاد سعيد يا قرة عيني. 🎂</div>
+    </div>
+  </div>
+</div>
+<script>
+function openCard(){
+  document.getElementById('start').classList.add('hidden');
+  document.getElementById('content').classList.remove('hidden');
+}
+</script>
+</body>
+</html>
